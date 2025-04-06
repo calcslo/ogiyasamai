@@ -3,6 +3,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- スマホ対応 -->
     <title>差枚データ</title>
     <style>
         table {
@@ -29,16 +30,24 @@
         }
         .table-container {
             display: flex;  /* 変更点: 横並びを解除して縦並びに変更 */
+            flex-wrap: wrap; /* スマホ対応で折り返す */
             justify-content: space-around;  /* 横並びの中で要素を分ける */
+            gap: 20px;
             margin-bottom: 40px;  /* テーブルと島図の間にスペースを追加 */
         }
         .table-wrapper {
-            width: 48%;  /* 横並びで要素の幅を調整 */
+            width: 100%;  /* 横並びで要素の幅を調整 */
             margin-bottom: 20px;  /* 画像とテーブルの間にスペースを追加 */
+        }
+        @media (min-width: 768px) {
+            .table-wrapper {
+                flex: 1 1 48%; /* タブレット以上では横並び */
+            }
         }
         .image-wrapper img {
             max-width: 100%;
             height: auto;
+            display: block;
         }
     </style>
 </head>
