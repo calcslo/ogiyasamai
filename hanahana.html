@@ -1,0 +1,64 @@
+
+            <!DOCTYPE html>
+            <html lang="ja">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- スマホ対応 -->
+                <title>オーギヤタウン半田　差枚データ</title>
+                <style>
+                    .url_selector {
+                        margin-bottom: 20px;  /* 画像とテーブルの間にスペースを追加 */
+                    }   
+                    .image-wrapper img {
+                        max-width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        height: auto;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>オーギヤタウン半田 差枚データ</h1>
+                <h2>ハナハナのみ集計</h2>
+                <div class="url_selector">
+                    <a href="index.html">TOPページへ戻る</a>
+                </div>
+                <div class="image-wrapper">
+                    <h3>角からの位置別平均差枚（0：島中　1：角台　2、3：角2・3）</h3>
+                    <img src="./images_h/角_平均予測差枚.png" alt="差枚データ">
+                    <h3>台番号末尾別平均差枚</h3>
+                    <img src="./images_h/台番号末尾別_平均予測差枚.png" alt="差枚データ">
+                    <h3>あるイベント日とその前回のイベント日の相関係数</h3>
+                    <img src="./images_h/島ごと相関係数.png" alt="差枚データ">
+                    <h3>連続凹み日数別平均差枚</h3>
+                    <img src="./images_h/連続凹み日数.png" alt="差枚データ">
+                    <h3>隣台推定高設定数</h3>
+                    <img src="./images_h/隣台推定高設定数.png" alt="差枚データ">
+                    <h3>並びとオセロの比率（1：並び、0：オセロ）</h3>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>割合</th>
+    </tr>
+    <tr>
+      <th>並びorオセロ</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0.0</th>
+      <td>93.82%</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>6.18%</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+            </body>
+            </html>
+            
